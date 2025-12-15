@@ -31,8 +31,7 @@ Dec 15, 2025
 ├── app
 │   ├── hand_det.py
 │   ├── run.py
-│   ├── stream_corners.py
-│   └── test.py
+│   └─ stream_corners.py
 ├── assets
 │   └── checkerboard.png
 ├── cv_env.yml
@@ -60,6 +59,13 @@ Dec 15, 2025
 
 ## Setup
 
+- To initialize the system, install requirements, then begin by running the calibration pipeline from the project root: `python setup/cali_pipeline.py`
+
+    - This script captures 50 calibration images of a checkerboard pattern when detected by the camera. The captured images are automatically cleaned using blur and noise detection, then preprocessed to enhance image quality. Using the processed images, the pipeline performs camera calibration and computes the intrinsic parameters (focal length, principal point, and lens distortion) as well as extrinsic parameters (rotation and translation vectors). The resulting calibration data are saved for use by the application.
+
+- Once calibration is complete, launch the main application: `python app/stream_corners.py`
+
+    - This starts the real-time system, which detects the calibrated corner geometry, establishes the region of interest, and performs egocentric hand-gesture tracking within the bounded area. Detected corners and hand landmarks are visualized live from the camera stream.
 
 ## Introduction
 This project develops a real-time system for screen boundary detection and gesture-based interaction using an ESP32 camera module. Screen corners are localized through a geometric pipeline combining Canny edge detection, Hough line extraction, segment intersection, and Harris corner refinement, providing stable tracking even under motion and partial occlusion.
