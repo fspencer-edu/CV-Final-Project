@@ -1,8 +1,9 @@
 # CV-Final-Project
 
-- Attached is:
+- Attached:
     - ESP32 Camera module stream (arduino code)
     - Program source code
+    - Demo
     - Final paper
 
 
@@ -81,7 +82,6 @@ The project timeline shows steady and structured development from early November
 
 
 
-
 | **Date**        | **Objective**                                    | **Status**   |
 | --------------- | ------------------------------------------------ | ------------ |
 | **Nov 1, 2025** | Initial project analysis + requirement gathering | 🟢 Completed |
@@ -97,14 +97,9 @@ The project timeline shows steady and structured development from early November
 | **Nov 22, 2025** | Harris refinement + temporal smoothing          | 🟢 Completed |
 | **Nov 22, 2025** | Integrate MediaPipe hand detection              | 🟢 Completed |
 | **Nov 23, 2025** | Build gesture → OS control layer                | 🟢 Completed |
-
-
-| **Date**         | **Objective**                              | **Status** |
-| ---------------- | ------------------------------------------ | ---------- |
-| **Nov 30, 2025** | 3D plotly visualization of camera & screen | 🔵 Planned |
-| **Nov 30, 2025** | Tkinter GUI: calibration workflow          | 🔵 Planned |
-| **Dec 4, 2025**  | Full integration test                      | 🔵 Planned |
-| **Dec 4, 2025**  | Performance tuning for ESP32 stream        | 🔵 Planned |
-| **Dec 10, 2025** | Finizalize Paper + README                  | 🔵 Planned |
-| **Dec 15, 2025** | SUBMIT                                     | 🔵 Planned |
-
+| **Nov 30, 2025** | 3D plotly visualization of camera & screen      | 🟢 Completed |
+| **Nov 30, 2025** | Tkinter GUI: calibration workflow               | 🟢 Completed |
+| **Dec 4, 2025**  | Full integration test                           | 🟢 Completed |
+| **Dec 4, 2025**  | Performance tuning for ESP32 stream             | 🟢 Completed |
+| **Dec 10, 2025** | Finizalize Paper + README                       | 🟢 Completed |
+| **Dec 15, 2025** | SUBMIT                                          | 🟢 Completed |
